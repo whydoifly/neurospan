@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+
+.make-orange {
+    color: #EF6F3A;
+    font-weight: 600;
+}
+
+.make-yellow {
+    color: #FFE57F;
+    font-weight: 600;
+}
+
+.main-container {
+    padding: 32px 32px 0px 32px;
+}
+
+.main-banner {
+    background-color: #2CA6FF;
+    color: #fff;
+    border-radius: 32px;
+    padding: 16px 64px 90px 64px;
+}
+
+.banner-box {
+    border: 2px solid #FFFFFF;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    cursor: pointer;
+    height: 125px;
+    width: 162px;
+    margin-top: 16px;
+}
+
+.banner-box:not(:last-child) {
+    margin-right: 16px;
+}
+
+.banner-box-main {
+    padding: 12px;
+}
+
+.arrow-back {
+    width: 28px;
+    height: 28px;
+}
+
+.neurospan-block {
+    margin-bottom: -70px;
+}
+
+.neurospan-heading {
+    font-size: 16vw;
+    font-weight: 700;
+    margin-top: 80px;
+}
+
+.neurospan-small {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+}
+
+.neurospan-buy {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    background-color: #fff;
+    border-radius: 100px;
+    padding:10px 12px 10px 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.neurospan-copyright {
+    font-size: 30px;
+    position: relative;
+    bottom: 15px;
+    font-weight: 500;
+}
+
+.neurospan-buy-img {
+    margin-left: 16px;
+}
+
+.vitamins-block {
+    line-height: 20px;
+    margin-top: 30px;
+}
+
+.vitamins,
+.vitamins-block__desc {
+    padding: 0;
+}
+
+.vitamin {
+    display: flex;
+    padding: 0;
+}
+
+.vitamin:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(188deg, #FFE57F 17.4%, #FFEA9D 96.27%), #C4C4C4;
+    display: block;
+    border-radius: 32px;
+    margin: 7px 5px 0px 0px;
+}
+
+.release-form {
+    margin-top: 32px;
+}
+
+.release-form__heading {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 83px;
+    margin: 100px 0 46px 0;
+}
+
+.mechanics,
+.nerve-dmg {
+    margin-top: 32px;
+}
+
+.mechanics__upheading {
+    margin-top: 49px;
+    color: #2CA6FF;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.mechanics__heading {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 83.2px;
+    margin-top: 12px;
+}
+
+.mechanics__text {
+    font-size: 24px;
+    line-height: 130%;
+    margin-top: 40px;
+}
+
+.nerve-dmg {
+    background-color: #2CA6FF;
+    padding: 0 55px;
+    border-radius: 32px;
+    color: #fff;
+}
+
+.nerve-dmg-img,
+.pain-illustration {
+    width: 100%;
+}
+
+.nerve-dmg__heading {
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 83px;
+    margin-top: 77px;
+}
+
+.nerve-dmg__text {
+    margin-top: 40px;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+/* Стили аккордеонов */
+.accordion {
+    background-color: #fff;
+    padding: 56px 88px;
+    border-radius: 32px;
+}
+
+.accordion-heading {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.accordion-desc {
+    margin: 24px 0 32px 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.accordion-body {
+    padding: 22px 0px 24px 0px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+}
+
+.accordion-item { 
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid #D6D6D6;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.accordion-item:first-of-type,
+.accordion-button {
+    border-radius: 0;
+}
+
+.accordion-button {
+    padding: 22px 0;
+}
+
+.accordion-button::after {
+    background-image: url(/img/icons/plus-blue.svg) !important;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.accordion-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+/* Конец стилей аккордеонов */
