@@ -6,18 +6,30 @@ body {
     background-color: #FAFAFA;
 }
 
+.make-orange,
+.make-yellow,
+.make-green {
+    font-weight: 600;
+}
+
 .make-orange {
     color: #EF6F3A;
-    font-weight: 600;
 }
 
 .make-yellow {
     color: #FFE57F;
-    font-weight: 600;
+}
+
+.make-green {
+    color: #69CA90;
 }
 
 .main-container {
     padding: 32px 32px 0px 32px;
+}
+
+.secondary-container {
+    padding: 0px 64px;
 }
 
 .main-banner {
@@ -66,7 +78,7 @@ body {
     font-weight: 300;
 }
 
-.neurospan-buy {
+.neurospan-button {
     font-size: 16px;
     font-weight: 700;
     color: #333333;
@@ -85,7 +97,7 @@ body {
     font-weight: 500;
 }
 
-.neurospan-buy-img {
+.neurospan-button-img {
     margin-left: 16px;
 }
 
@@ -126,7 +138,8 @@ body {
 }
 
 .mechanics,
-.nerve-dmg {
+.nerve-dmg,
+.indications {
     margin-top: 32px;
 }
 
@@ -158,7 +171,8 @@ body {
 }
 
 .nerve-dmg-img,
-.pain-illustration {
+.pain-illustration,
+.components-action {
     width: 100%;
 }
 
@@ -174,6 +188,496 @@ body {
     font-size: 24px;
     line-height: 31px;
 }
+
+.reasons {
+    margin-top: 88px;
+}
+
+.reasons__heading {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 83px;
+}
+
+.reasons__cards {
+    margin-top: 56px;
+}
+
+.reason {
+    background-color: #FFE57F;
+    width: 328px;
+    border-radius: 32px;
+    padding: 44px 25px;
+}
+
+.reason:not(:last-child) {
+    margin-right: 32px;
+}
+
+.reason__text {
+    margin-top: 65px;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.neurospan-banner {
+    margin-top: 133px;
+    background-color: #2CA6FF;
+    border-radius: 32px;
+    padding-bottom: 142px;
+}
+
+.neurospan-banner__text {
+    font-size: 7vw;
+    font-weight: 500;
+    line-height: 90%;
+    color: #fff;
+}
+
+.neurospan-banner__img {
+    position: relative;
+    margin-bottom: -95px;
+    z-index: 2;
+}
+
+.mechanics__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.m-card {
+    background-color: #fff;
+    padding: 23px 32px;
+    border-radius: 32px;
+    flex: 40%;
+}
+
+.m-card-1,
+.m-card-3 {
+    margin-right: 32px;
+}
+
+.m-card-3,
+.m-card-4 {
+    margin-top: 32px;
+}
+
+.m-card__number {
+    background-color: #69CA90;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.m-card__heading {
+    margin-top: 36px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.m-card__text {
+    line-height: 19.57px;
+    margin-top: 11px;
+}
+
+.indications {
+    background-color: #FFE57F;
+    border-radius: 32px;
+    padding: 118px 64px 152px 64px;
+}
+
+.indications__heading {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 83px;
+}
+
+.indications__text {
+    font-size: 24px;
+}
+
+.neurospan-button_indications {
+    display: inline-block;
+    margin-top: 56px;
+}
+
+.indications__contradictions {
+    margin-top: 44px;
+}
+
+.contrads {
+    margin-top: 8px;
+}
+
+.contrad {
+    display: flex;
+    padding: 0;
+}
+
+.contrad:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #FF725E;
+    display: block;
+    border-radius: 32px;
+    margin: 7px 5px 0px 0px;
+}
+
+.use {
+    margin-top: 111px;
+}
+
+.use__heading {
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 42px;
+}
+
+.use-card {
+    background-color: #fff;
+    border-radius: 32px;
+    width: 688px;
+    padding: 63px 85px 32px 85px;
+}
+
+.use-card:first-child {
+    margin-right: 32px;
+}
+
+.use-img {
+    margin-top: 63px;
+}
+
+.use-card__brand {
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+.neurospan-button_download-blue,
+.neurospan-button_download-yellow {
+    margin-top: 24px;
+    margin-bottom: 52px;
+    display: inline-block;
+}
+
+.neurospan-button_download-blue {
+    border: 2px solid #2CA6FF;
+}
+
+.neurospan-button_download-yellow {
+    border: 2px solid #FFE57F;
+}
+
+.use-instr {
+    font-size: 22px;
+    margin-bottom: 30px;
+    text-align: left;
+    display: flex;
+}
+
+.use-instr-1_blue:before {
+    content: url(/img/icons/tablets-blue.svg);
+    margin-right: 18px;
+}
+
+.use-instr-2_blue:before {
+    content: url(/img/icons/calendar-blue.svg);
+}
+
+.use-instr-3_blue:before {
+    content: url(/img/icons/arrows-blue.svg);
+}
+
+.use-instr-1_yellow:before {
+    content: url(/img/icons/tablets-yellow.svg);
+    margin-right: 18px;
+}
+
+.use-instr-2_yellow:before {
+    content: url(/img/icons/calendar-yellow.svg);
+}
+
+.use-instr-3_yellow:before {
+    content: url(/img/icons/arrows-yellow.svg);
+}
+
+/* Слайдер статей */
+
+.articles {
+    padding: 92px 64px 132px 64px;
+    background-color: #FFE57F;
+    margin-top: 32px;
+    border-radius: 32px;
+}
+
+.articles__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.articles__heading {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.articles__buttons {
+    display: flex;
+}
+
+.swiper-articles {
+    margin-top: 43px;
+}
+
+.swiper-article {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+.swiper-article__img img {
+    border-radius: 32px;
+    margin-right: 24px;
+}
+
+.swiper-article__desc {
+    line-height: 27px;
+}
+
+.swiper-article__authors {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.article-button-prev {
+    content: url(/img/swiper-arrow.png);
+    transform: rotate(180deg);
+    margin-right: 16px;
+}
+
+.article-button-next {
+    content: url(/img/swiper-arrow.png);
+}
+
+.article-button-prev,
+.article-button-next {
+    position: relative !important;
+    top: 0 !important;
+    width: 72px;
+    height: 72px;
+}
+
+.swiper-button-disabled {
+    opacity: 0.35;
+}
+
+/* Конец слайдера статей */
+
+/* Эксперты о препарате */
+
+.experts-feedback {
+    display: flex;
+    width: 100%;
+    margin-top: 87px;
+}
+
+.feedback-block {
+    width: 65%;
+}
+
+.feedback-block__img-block {
+    position: relative;
+    cursor: pointer;
+}
+
+.feedback-block__img-block::after {
+    position: absolute;
+    content: url(/img/big-play.png);
+    top: 46%;
+    left: 48%;
+    width: 72px;
+    height: 72px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: all 0.1s;
+    background-position: 55.5% center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    z-index: 1;
+}
+
+.feedback-block__img {
+    border-radius: 32px;
+    width: 100%;
+}
+
+.feedback-block__author {
+    margin-top: 23px;
+}
+
+.feedback-block__topic {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 8px 0;
+}
+
+.feedback-block__desc {
+    margin-bottom: -6px;
+}
+
+.feeds {
+    width: 35%;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 648px;
+    margin-left: 24px;
+}
+
+.feed {
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 24px;
+    margin: 0px 24px 8px 0px;
+    cursor: pointer;
+}
+
+.feed__top {
+    display: flex;
+}
+
+.feed__img {
+    margin-right: 16px;
+    border-radius: 16px;
+}
+
+.feed__topic {
+    font-weight: 700;
+    line-height: 19.57px;
+    margin-top: 8px;
+}
+
+.feed__desc {
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.feed__tags {
+    display: flex;
+    margin-top: 16px;
+}
+
+.feed__tag {
+    padding: 2px 6px;
+    background-color: rgba(105, 202, 144, 0.15);
+    border-radius: 4px;
+    color: #69CA90;
+    margin-right: 4px;
+}
+
+#experts-feeds-block::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+#experts-feeds-block::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #fff;
+}
+
+#experts-feeds-block::-webkit-scrollbar-thumb
+{
+	border-radius: 100px;
+	background-color: #69CA90;
+}
+
+/* Эксперты о препарате */
+
+/* Слайдер лекций */
+.lectures {
+    margin-top: 111px;
+}
+
+.lectures__heading {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.lectures__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lectures__buttons {
+    display: flex;
+}
+
+.lecture-button-prev {
+    content: url(/img/swiper-arrow-green.png);
+    transform: rotate(180deg);
+    margin-right: 16px;
+}
+
+.lecture-button-next {
+    content: url(/img/swiper-arrow-green.png);
+}
+
+.lecture-button-prev,
+.lecture-button-next {
+    position: relative !important;
+    top: 0 !important;
+    width: 72px;
+    height: 72px;
+}
+
+.swiper-lectures {
+    margin-top: 51px;
+}
+
+.lecture-img {
+    width: 100%;
+    border-radius: 32px;
+    position: relative;
+}
+
+.lecture-slide__img::after {
+    position: absolute;
+    content: url(/img/small-play.png);
+    top: 37%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: all 0.1s;
+    background-position: 55.5% center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    z-index: 1;
+}
+
+.lecture-slide__author {
+    margin-top: 17px;
+}
+
+.lecture-slide__topic {
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+/* Конец слайдера лекций */
 
 /* Стили аккордеонов */
 .accordion {
@@ -229,3 +733,9 @@ body {
     box-shadow: none;
 }
 /* Конец стилей аккордеонов */
+
+@media (min-width: 1506px) {
+    .m-card-2 {
+        margin-right: auto;
+    }
+}

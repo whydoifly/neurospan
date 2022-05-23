@@ -8,15 +8,54 @@
     <title>Нейроспан</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] =
+                m[i] ||
+                function () {
+                    (m[i].a = m[i].a || []).push(arguments);
+                };
+            m[i].l = 1 * new Date();
+            (k = e.createElement(t)),
+                (a = e.getElementsByTagName(t)[0]),
+                (k.async = 1),
+                (k.src = r),
+                a.parentNode.insertBefore(k, a);
+        })(
+            window,
+            document,
+            'script',
+            'https://mc.yandex.ru/metrika/tag.js',
+            'ym'
+        );
+
+        ym(88845353, 'init', {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            ecommerce: 'dataLayer',
+        });
+    </script>
+    <noscript>
+        <div>
+            <img src="https://mc.yandex.ru/watch/88845353" style="position: absolute; left: -9999px" alt="" />
+        </div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
     <div class="main-container">
+        <!-- Первый экран -->
         <section class="main-banner">
             <div class="banner-boxes row">
                 <div class="banner-box banner-box-main col text-center d-flex flex-column justify-content-between">
-                    <img src="img/icons/arrow-back.svg" alt="назад на интернейро" class="arrow-back">
-                    <img src="img/icons/logo.svg" alt="логотип междисциплинарная неврология" class="logo-interneuro">
+                    <img src="img/icons/arrow-back.svg" alt="назад на интернейро" class="arrow-back" />
+                    <img src="img/icons/logo.svg" alt="логотип междисциплинарная неврология" class="logo-interneuro" />
                 </div>
                 <div class="banner-box col text-center d-flex flex-column justify-content-center">
                     Форма выпуска
@@ -42,40 +81,40 @@
             </div>
             <div class="neurospan-heading">
                 <div class="neurospan-block d-flex justify-content-between align-items-start">
-                    <div class="neurospan-small">
-                        Комплекс для нервных волокон
-                    </div>
-                    <div class="neurospan-buy">
-                        Где купить <img src="img/icons/where-to-buy-arrow.svg" alt="где купить"
-                            class="neurospan-buy-img">
+                    <div class="neurospan-small">Комплекс для нервных волокон</div>
+                    <div class="neurospan-button">
+                        Где купить
+                        <img src="img/icons/where-to-buy-arrow.svg" alt="где купить" class="neurospan-button-img" />
                     </div>
                 </div>
 
-                <div class="neurospan-big">
-                    Нейроспан
-                </div>
+                <div class="neurospan-big">Нейроспан</div>
             </div>
             <div class="vitamins-block row justify-content-between">
                 <div class="vitamins-block__desc col-md-5">
-                    Содержит естественные для организма компоненты,<br> которые стимулируют
-                    восстановление нервных волокон:
+                    Содержит естественные для организма компоненты,<br />
+                    которые стимулируют восстановление нервных волокон:
                 </div>
                 <div class="vitamins col-md-7 row d-flex">
-                    <div class="vitamin col-md-4">Нуклеотид уридин-5-монофосфат </div>
+                    <div class="vitamin col-md-4">Нуклеотид уридин-5-монофосфат</div>
                     <div class="vitamin col-md-4">Витамины В12 (Цианокобаламин)</div>
                     <div class="vitamin col-md-4">B9 (Фолиевую кислота)</div>
                 </div>
             </div>
         </section>
-        <section class="release-form">
+
+        <!-- Форма выпуска (аккордеоны) -->
+        <section class="release-form secondary-container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="release-form__heading">
-                        Форма выпуска препарата
-                    </div>
+                    <div class="release-form__heading">Форма выпуска препарата</div>
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-heading">Нейроспан<span class="neurospan-copyright">&#174;</span></div>
-                        <div class="accordion-desc"> <img src="img/icons/tablet-icon.svg" alt=""> 50 таблеток (165 мг)
+                        <div class="accordion-heading">
+                            Нейроспан<span class="neurospan-copyright">&#174;</span>
+                        </div>
+                        <div class="accordion-desc">
+                            <img src="img/icons/tablet-icon.svg" alt="" /> 50 таблеток (165
+                            мг)
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
@@ -87,15 +126,15 @@
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until the
-                                    collapse plugin adds the appropriate classes that we use to style each element.
-                                    These
-                                    classes control the overall appearance, as well as the showing and hiding via CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables.
-                                    It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <strong>This is the first item's accordion body.</strong> It
+                                    is shown by default, until the collapse plugin adds the
+                                    appropriate classes that we use to style each element. These
+                                    classes control the overall appearance, as well as the
+                                    showing and hiding via CSS transitions. You can modify any
+                                    of this with custom CSS or overriding our default variables.
+                                    It's also worth noting that just about any HTML can go
+                                    within the <code>.accordion-body</code>, though the
+                                    transition does limit overflow.
                                 </div>
                             </div>
                         </div>
@@ -109,15 +148,15 @@
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until
-                                    the collapse plugin adds the appropriate classes that we use to style each element.
-                                    These
-                                    classes control the overall appearance, as well as the showing and hiding via CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables.
-                                    It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <strong>This is the second item's accordion body.</strong>
+                                    It is hidden by default, until the collapse plugin adds the
+                                    appropriate classes that we use to style each element. These
+                                    classes control the overall appearance, as well as the
+                                    showing and hiding via CSS transitions. You can modify any
+                                    of this with custom CSS or overriding our default variables.
+                                    It's also worth noting that just about any HTML can go
+                                    within the <code>.accordion-body</code>, though the
+                                    transition does limit overflow.
                                 </div>
                             </div>
                         </div>
@@ -131,15 +170,15 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the
-                                    collapse plugin adds the appropriate classes that we use to style each element.
-                                    These
-                                    classes control the overall appearance, as well as the showing and hiding via CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables.
-                                    It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <strong>This is the third item's accordion body.</strong> It
+                                    is hidden by default, until the collapse plugin adds the
+                                    appropriate classes that we use to style each element. These
+                                    classes control the overall appearance, as well as the
+                                    showing and hiding via CSS transitions. You can modify any
+                                    of this with custom CSS or overriding our default variables.
+                                    It's also worth noting that just about any HTML can go
+                                    within the <code>.accordion-body</code>, though the
+                                    transition does limit overflow.
                                 </div>
                             </div>
                         </div>
@@ -147,9 +186,12 @@
                 </div>
                 <div class="col-md-6">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-heading">Нейроспан<span class="neurospan-copyright">&#174;</span>ФОРТЕ
+                        <div class="accordion-heading">
+                            Нейроспан<span class="neurospan-copyright">&#174;</span>ФОРТЕ
                         </div>
-                        <div class="accordion-desc"> <img src="img/icons/tablet-icon-2.svg" alt=""> 50 таблеток (165 мг)
+                        <div class="accordion-desc">
+                            <img src="img/icons/tablet-icon-2.svg" alt="" /> 50 таблеток
+                            (165 мг)
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
@@ -161,15 +203,15 @@
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It is shown by default,
-                                    until the
-                                    collapse plugin adds the appropriate classes that we use to style each element.
-                                    These
-                                    classes control the overall appearance, as well as the showing and hiding via CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables.
-                                    It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <strong>This is the first item's accordion body.</strong> It
+                                    is shown by default, until the collapse plugin adds the
+                                    appropriate classes that we use to style each element. These
+                                    classes control the overall appearance, as well as the
+                                    showing and hiding via CSS transitions. You can modify any
+                                    of this with custom CSS or overriding our default variables.
+                                    It's also worth noting that just about any HTML can go
+                                    within the <code>.accordion-body</code>, though the
+                                    transition does limit overflow.
                                 </div>
                             </div>
                         </div>
@@ -183,15 +225,15 @@
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                    until
-                                    the collapse plugin adds the appropriate classes that we use to style each element.
-                                    These
-                                    classes control the overall appearance, as well as the showing and hiding via CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables.
-                                    It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <strong>This is the second item's accordion body.</strong>
+                                    It is hidden by default, until the collapse plugin adds the
+                                    appropriate classes that we use to style each element. These
+                                    classes control the overall appearance, as well as the
+                                    showing and hiding via CSS transitions. You can modify any
+                                    of this with custom CSS or overriding our default variables.
+                                    It's also worth noting that just about any HTML can go
+                                    within the <code>.accordion-body</code>, though the
+                                    transition does limit overflow.
                                 </div>
                             </div>
                         </div>
@@ -205,15 +247,15 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
-                                    until the
-                                    collapse plugin adds the appropriate classes that we use to style each element.
-                                    These
-                                    classes control the overall appearance, as well as the showing and hiding via CSS
-                                    transitions. You can modify any of this with custom CSS or overriding our default
-                                    variables.
-                                    It's also worth noting that just about any HTML can go within the
-                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                    <strong>This is the third item's accordion body.</strong> It
+                                    is hidden by default, until the collapse plugin adds the
+                                    appropriate classes that we use to style each element. These
+                                    classes control the overall appearance, as well as the
+                                    showing and hiding via CSS transitions. You can modify any
+                                    of this with custom CSS or overriding our default variables.
+                                    It's also worth noting that just about any HTML can go
+                                    within the <code>.accordion-body</code>, though the
+                                    transition does limit overflow.
                                 </div>
                             </div>
                         </div>
@@ -221,55 +263,539 @@
                 </div>
             </div>
         </section>
-        <section class="mechanics">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="mechanics__upheading">
-                        Механизм действия
-                    </div>
-                    <div class="mechanics__heading">
-                        Как появляется боль?
-                    </div>
+
+        <!-- Как появляется боль -->
+        <section class="mechanics secondary-container">
+            <div class="row justify-content-between">
+                <div class="col-md-5">
+                    <div class="mechanics__upheading">Механизм действия</div>
+                    <div class="mechanics__heading">Как появляется боль?</div>
                     <div class="mechanics__text">
-                        <span class="make-orange">Боль</span> появляется в следствии поврежденных волокон периферических
-                        нервов.
-                        Периферическая нервная система пронизывает всё наше тело.
-                        Она состоит из нервных волокон.
-                        <br><br>
-                        <span class="make-orange">Жжение, онемение, покалывание, внезапные «прострелы»</span> – частые
-                        проявления боли. Зачастую боль
-                        может ощущаться не там, где скрыта причина и отдаваться в других частях тела.
+                        <span class="make-orange">Боль</span> появляется в следствии
+                        поврежденных волокон периферических нервов. Периферическая нервная
+                        система пронизывает всё наше тело. Она состоит из нервных волокон.
+                        <br /><br />
+                        <span class="make-orange">Жжение, онемение, покалывание, внезапные «прострелы»</span>
+                        – частые проявления боли. Зачастую боль может ощущаться не там,
+                        где скрыта причина и отдаваться в других частях тела.
                     </div>
                 </div>
                 <div class="col-md-6 text-center">
-                    <img src="img/icons/pain-illustration.svg" alt="" class="pain-illustration">
+                    <img src="img/icons/pain-illustration.svg" alt="" class="pain-illustration" />
                 </div>
             </div>
         </section>
+
+        <!-- Баннер повреждение нервного волокна -->
         <section class="nerve-dmg">
             <div class="row">
                 <div class="col-md-6 text-center">
-                    <img src="img/icons/nerve-damage.svg" alt="" class="nerve-dmg-img">
+                    <img src="img/icons/nerve-damage.svg" alt="" class="nerve-dmg-img" />
                 </div>
                 <div class="col-md-6">
                     <div class="nerve-dmg__heading">Повреждение нервного волокна</div>
-                    <div class="nerve-dmg__text">Одна из причин неприятных ощущений и боли в теле — повреждение
-                        периферических нервных волокон, в частности миелиновой оболочки. Миелиновая оболочка – наиболее
-                        уязвимая часть периферического нерва.
-                        <br><br>
-                        <span class="make-yellow">Миелиновая оболочка</span> покрывает нервное волокно на протяжении
-                        всей длины. Повреждение оболочки в
-                        одном месте влияет на весь нерв, так как обнажается центральная часть нервной клетки и начинают
-                        посылаться спонтанные болевые сигналы в мозг.
+                    <div class="nerve-dmg__text">
+                        Одна из причин неприятных ощущений и боли в теле — повреждение
+                        периферических нервных волокон, в частности миелиновой оболочки.
+                        Миелиновая оболочка – наиболее уязвимая часть периферического
+                        нерва. <br /><br />
+                        <span class="make-yellow">Миелиновая оболочка</span> покрывает
+                        нервное волокно на протяжении всей длины. Повреждение оболочки в
+                        одном месте влияет на весь нерв, так как обнажается центральная
+                        часть нервной клетки и начинают посылаться спонтанные болевые
+                        сигналы в мозг.
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Причины повреждения переферических нервов -->
+        <section class="reasons secondary-container">
+            <div class="reasons__heading text-center">
+                Основные причины повреждения периферических нервов
+            </div>
+            <div class="reasons__cards row justify-content-center">
+                <div class="col-lg-3 text-center reason">
+                    <img src="img/icons/cycle-icon.svg" alt="" class="reason__img" />
+                    <div class="reason__text">Длительное нарушение обмена веществ</div>
+                </div>
+                <div class="col-lg-3 text-center reason">
+                    <img src="img/icons/nerve-pinch-icon.svg" alt="" class="reason__img" />
+                    <div class="reason__text">
+                        Защемление нервов, в том числе из-за травм
+                    </div>
+                </div>
+                <div class="col-lg-3 text-center reason">
+                    <img src="img/icons/clock-icon.svg" alt="" class="reason__img" />
+                    <div class="reason__text">Малоподвижный образ жизни</div>
+                </div>
+                <div class="col-lg-3 text-center reason">
+                    <img src="img/icons/lightning-icon.svg" alt="" class="reason__img" />
+                    <div class="reason__text">Воспалительные процессы в организме</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Баннер нейроспан (восстанавливает поврежденные волокна)-->
+        <section class="neurospan-banner text-center">
+            <img src="img/neurospan-img.png" alt="" class="neurospan-banner__img" />
+            <div class="neurospan-banner__text">
+                <span class="make-yellow">Нейроспан®</span> восстанавливает
+                поврежденные<br />
+                нервные волокна
+            </div>
+        </section>
+
+        <!-- Действие компонентов -->
+        <section class="mechanics secondary-container">
+            <div class="row justify-content-between">
+                <div class="col-md-5">
+                    <div class="mechanics__heading">Действие компонентов</div>
+                    <div class="mechanics__text">
+                        <span class="make-green">Нейроспан®</span> включает комплекс
+                        витаминов группы B (витамин <span class="make-green">B12</span> и
+                        <span class="make-green">В9</span>) с уридинмонофосфатом (<span class="make-green">УМФ</span>),
+                        который играют ключевую роль в процессе регенерации
+                        поврежденного нерва, включаясь в обмен веществ нервной клетки.
+                        <br /><br />
+                        Комбинация эти компонентов
+                        <span class="make-green">действует направлено&nbsp; на повреждённые структуры
+                            нервов</span>, помогает справиться с воспалением и болью.
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="img/icons/components-action.svg" alt="" class="components-action" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Компоненты способствуют -->
+        <section class="mechanics secondary-container">
+            <div class="row justify-content-between">
+                <div class="col-md-5">
+                    <div class="mechanics__heading">
+                        Компоненты Нейроспан® способствуют:
+                    </div>
+                </div>
+                <div class="col-md-6 px-3">
+                    <div class="mechanics__cards">
+                        <div class="m-card m-card-1">
+                            <div class="m-card__number">01</div>
+                            <div class="m-card__heading">Регенерации</div>
+                            <div class="m-card__text">
+                                Восстановлению нервного волокна — регенерация поврежденных
+                                миелиновых оболочек нервов
+                            </div>
+                        </div>
+                        <div class="m-card m-card-2">
+                            <div class="m-card__number">02</div>
+                            <div class="m-card__heading">Транспорту веществ</div>
+                            <div class="m-card__text">
+                                Поступлению достаточного количества строительных элементов и
+                                ферментов к поврежденным нервам
+                            </div>
+                        </div>
+                        <div class="m-card m-card-3">
+                            <div class="m-card__number">03</div>
+                            <div class="m-card__heading">Синергии</div>
+                            <div class="m-card__text">
+                                Компоненты взаимно усиливают действие друг друга
+                            </div>
+                        </div>
+                        <div class="m-card m-card-4">
+                            <div class="m-card__number">04</div>
+                            <div class="m-card__heading">Профилактике</div>
+                            <div class="m-card__text">
+                                Профилактике дальнейшего повреждения периферических нервных
+                                волокон
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Показания к применению -->
+        <section class="indications">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="indications__heading">Показания к применению</div>
+                    <div class="indications__contradictions">
+                        <b>Противопоказания:</b><br />
+                        <div class="contrads">
+                            <div class="contrad">
+                                Индивидуальная непереносимость, беременность, кормление грудью
+                            </div>
+                            <div class="contrad">
+                                Перед применением рекомендуется проконсультироваться с врачом
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="indications__text">
+                        В качестве биологически активной добавки к пище – дополнительного
+                        источника витаминов В1, В6, В12 и фолиевой кислоты, источника
+                        холина, содержащей натриевую соль уридинмонофосфата.
+                    </div>
+                    <div class="neurospan-button neurospan-button_indications">
+                        Источник
+                        <img src="img/icons/where-to-buy-arrow.svg" alt="Источник" class="neurospan-button-img" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Способ применения -->
+        <section class="use secondary-container">
+            <div class="use__heading text-center">Способ применения</div>
+            <div class="row justify-content-center">
+                <div class="use-card col-md-5 text-center">
+                    <img src="img/neurospan-box.png" alt="" class="use-img" />
+                    <div class="use-card__brand">Нейроспан®</div>
+                    <div class="use-card__download">
+                        <div class="neurospan-button neurospan-button_download-blue">
+                            Скачать подробную инстурукцию
+                            <img src="img/icons/download-blue.svg" alt="Скачать подробную инстурукцию"
+                                class="neurospan-button-img" />
+                        </div>
+                    </div>
+                    <div class="use-card__text">
+                        <div class="use-instr use-instr-1_blue">
+                            Взрослым по 1-2 таблетки в день, запивая достаточным количеством
+                            воды
+                        </div>
+                        <div class="use-instr use-instr-2_blue">
+                            Продолжительность приема — 1 месяц
+                        </div>
+                        <div class="use-instr use-instr-3_blue">
+                            При необходимости прием можно повторить
+                        </div>
+                    </div>
+                </div>
+                <div class="use-card col-md-5 text-center">
+                    <img src="img/neurospan-forte-box.png" alt="" class="use-img" />
+                    <div class="use-card__brand">Нейроспан®Форте</div>
+                    <div class="use-card__download">
+                        <div class="neurospan-button neurospan-button_download-yellow">
+                            Скачать подробную инстурукцию
+                            <img src="img/icons/download-yellow.svg" alt="Скачать подробную инстурукцию"
+                                class="neurospan-button-img" />
+                        </div>
+                    </div>
+                    <div class="use-card__text">
+                        <div class="use-instr use-instr-1_yellow">
+                            Взрослым по 2 капсулы в день, запивая достаточным количеством
+                            воды
+                        </div>
+                        <div class="use-instr use-instr-2_yellow">
+                            Продолжительность приема — 1 месяц
+                        </div>
+                        <div class="use-instr use-instr-3_yellow">
+                            При необходимости прием можно повторить
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Статьи -->
+        <section class="articles">
+            <div class="articles__top">
+                <div class="articles__heading">Статьи о препарате</div>
+                <div class="articles__buttons">
+                    <div class="article-button-prev"></div>
+                    <div class="article-button-next"></div>
+                </div>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper swiper-articles">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-article">
+                        <div class="swiper-article__img">
+                            <img src="img/cell-bg.jpg" alt="" />
+                        </div>
+                        <div class="swiper-article__text">
+                            <div class="swiper-article__desc">
+                                Роль комплексного препарата витаминов группы В, уридина и
+                                холина в терапии хронического болевого синдрома
+                            </div>
+                            <div class="swiper-article__authors">
+                                Наумов А.В., Мороз В.И., Маневич Т.М.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-article">
+                        <div class="swiper-article__img">
+                            <img src="img/cell-bg.jpg" alt="" />
+                        </div>
+                        <div class="swiper-article__text">
+                            <div class="swiper-article__desc">
+                                Роль комплексного препарата витаминов группы В, уридина и
+                                холина в терапии хронического болевого синдрома
+                            </div>
+                            <div class="swiper-article__authors">
+                                Наумов А.В., Мороз В.И., Маневич Т.М.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-article">
+                        <div class="swiper-article__img">
+                            <img src="img/cell-bg.jpg" alt="" />
+                        </div>
+                        <div class="swiper-article__text">
+                            <div class="swiper-article__desc">
+                                Роль комплексного препарата витаминов группы В, уридина и
+                                холина в терапии хронического болевого синдрома
+                            </div>
+                            <div class="swiper-article__authors">
+                                Наумов А.В., Мороз В.И., Маневич Т.М.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-article">
+                        <div class="swiper-article__img">
+                            <img src="img/cell-bg.jpg" alt="" />
+                        </div>
+                        <div class="swiper-article__text">
+                            <div class="swiper-article__desc">
+                                Роль комплексного препарата витаминов группы В, уридина и
+                                холина в терапии хронического болевого синдрома
+                            </div>
+                            <div class="swiper-article__authors">
+                                Наумов А.В., Мороз В.И., Маневич Т.М.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-article">
+                        <div class="swiper-article__img">
+                            <img src="img/cell-bg.jpg" alt="" />
+                        </div>
+                        <div class="swiper-article__text">
+                            <div class="swiper-article__desc">
+                                Роль комплексного препарата витаминов группы В, уридина и
+                                холина в терапии хронического болевого синдрома
+                            </div>
+                            <div class="swiper-article__authors">
+                                Наумов А.В., Мороз В.И., Маневич Т.М.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Эксперты о препарате -->
+        <section class="experts-feedback secondary-container">
+            <div class="feedback-block">
+                <div class="feedback-block__img-block">
+                    <img src="img/author-img-selected.jpg" class="feedback-block__img" />
+                </div>
+                <div class="feedback-block__author">Соколов А. В.</div>
+                <div class="feedback-block__topic">
+                    Роль комплексного препарата витаминов группы В
+                </div>
+                <div class="feedback-block__desc">
+                    Миелиновая оболочка покрывает нервное волокно на протяжении всей
+                    длин, уридина и холина в терапии хронического
+                </div>
+                <div class="feed__tags">
+                    <div class="feed__tag">Боль</div>
+                    <div class="feed__tag">Антидепрессант</div>
+                    <div class="feed__tag">Неврология</div>
+                    <div class="feed__tag">Энергия</div>
+                </div>
+            </div>
+            <div class="feeds" id="experts-feeds-block">
+                <div class="feed">
+                    <div class="feed__top">
+                        <img class="feed__img" src="img/author-img.jpg" />
+                        <div class="feed__heading">
+                            <div class="feed__author">Соколов А. В.</div>
+                            <div class="feed__topic">
+                                Роль комплексного препарата витаминов группы В
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed__desc">
+                        Миелиновая оболочка покрывает нервное волокно на протяжении всей
+                        длин, уридина и холина в терапии хронического
+                    </div>
+                    <div class="feed__tags">
+                        <div class="feed__tag">Боль</div>
+                        <div class="feed__tag">Антидепрессант</div>
+                        <div class="feed__tag">Неврология</div>
+                        <div class="feed__tag">Энергия</div>
+                    </div>
+                </div>
+                <div class="feed">
+                    <div class="feed__top">
+                        <img class="feed__img" src="img/author-img.jpg" />
+                        <div class="feed__heading">
+                            <div class="feed__author">Соколов А. В.</div>
+                            <div class="feed__topic">
+                                Роль комплексного препарата витаминов группы В
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed__desc">
+                        Миелиновая оболочка покрывает нервное волокно на протяжении всей
+                        длин, уридина и холина в терапии хронического
+                    </div>
+                    <div class="feed__tags">
+                        <div class="feed__tag">Боль</div>
+                        <div class="feed__tag">Антидепрессант</div>
+                        <div class="feed__tag">Неврология</div>
+                        <div class="feed__tag">Энергия</div>
+                    </div>
+                </div>
+                <div class="feed">
+                    <div class="feed__top">
+                        <img class="feed__img" src="img/author-img.jpg" />
+                        <div class="feed__heading">
+                            <div class="feed__author">Соколов А. В.</div>
+                            <div class="feed__topic">
+                                Роль комплексного препарата витаминов группы В
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed__desc">
+                        Миелиновая оболочка покрывает нервное волокно на протяжении всей
+                        длин, уридина и холина в терапии хронического
+                    </div>
+                    <div class="feed__tags">
+                        <div class="feed__tag">Боль</div>
+                        <div class="feed__tag">Антидепрессант</div>
+                        <div class="feed__tag">Неврология</div>
+                        <div class="feed__tag">Энергия</div>
+                    </div>
+                </div>
+                <div class="feed">
+                    <div class="feed__top">
+                        <img class="feed__img" src="img/author-img.jpg" />
+                        <div class="feed__heading">
+                            <div class="feed__author">Соколов А. В.</div>
+                            <div class="feed__topic">
+                                Роль комплексного препарата витаминов группы В
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed__desc">
+                        Миелиновая оболочка покрывает нервное волокно на протяжении всей
+                        длин, уридина и холина в терапии хронического
+                    </div>
+                    <div class="feed__tags">
+                        <div class="feed__tag">Боль</div>
+                        <div class="feed__tag">Антидепрессант</div>
+                        <div class="feed__tag">Неврология</div>
+                        <div class="feed__tag">Энергия</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Лекции о препарате -->
+        <section class="lectures secondary-container">
+            <div class="lectures__top">
+                <div class="lectures__heading">Лекции о препарате</div>
+                <div class="lectures__buttons">
+                    <div class="lecture-button-prev"></div>
+                    <div class="lecture-button-next"></div>
+                </div>
+            </div>
+
+            <div class="swiper swiper-lectures">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide lecture-slide">
+                        <div class="lecture-slide__img">
+                            <img src="img/lecture-img.jpg" alt="" class="lecture-img">
+                        </div>
+                        <div class="lecture-slide__author">Костенко М. В.</div>
+                        <div class="lecture-slide__topic">Новый эффективный препарат Нейроспан</div>
+                        <div class="feed__tags">
+                            <div class="feed__tag">Боль</div>
+                            <div class="feed__tag">Антидепрессант</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide lecture-slide">
+                        <div class="lecture-slide__img">
+                            <img src="img/lecture-img.jpg" alt="" class="lecture-img">
+                        </div>
+                        <div class="lecture-slide__author">Костенко М. В.</div>
+                        <div class="lecture-slide__topic">Новый эффективный препарат Нейроспан</div>
+                        <div class="feed__tags">
+                            <div class="feed__tag">Боль</div>
+                            <div class="feed__tag">Антидепрессант</div>
+                        </div>
+                    </div><div class="swiper-slide lecture-slide">
+                        <div class="lecture-slide__img">
+                            <img src="img/lecture-img.jpg" alt="" class="lecture-img">
+                        </div>
+                        <div class="lecture-slide__author">Костенко М. В.</div>
+                        <div class="lecture-slide__topic">Новый эффективный препарат Нейроспан</div>
+                        <div class="feed__tags">
+                            <div class="feed__tag">Боль</div>
+                            <div class="feed__tag">Антидепрессант</div>
+                        </div>
+                    </div><div class="swiper-slide lecture-slide">
+                        <div class="lecture-slide__img">
+                            <img src="img/lecture-img.jpg" alt="" class="lecture-img">
+                        </div>
+                        <div class="lecture-slide__author">Костенко М. В.</div>
+                        <div class="lecture-slide__topic">Новый эффективный препарат Нейроспан</div>
+                        <div class="feed__tags">
+                            <div class="feed__tag">Боль</div>
+                            <div class="feed__tag">Антидепрессант</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
     </div>
 
+    <script type="module" src="js/feedback.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiperArticles = new Swiper('.swiper-articles', {
+            spaceBetween: 32,
+            speed: 800,
+            navigation: {
+                nextEl: '.article-button-next',
+                prevEl: '.article-button-prev',
+            },
+            breakpoints: {
+                1: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+            },
+        });
+
+        var swiperLectures = new Swiper('.swiper-lectures', {
+            spaceBetween: 32,
+            speed: 800,
+            navigation: {
+                nextEl: '.lecture-button-next',
+                prevEl: '.lecture-button-prev',
+            },
+            breakpoints: {
+                1: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
