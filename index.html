@@ -49,33 +49,69 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
+    <!-- Мобильное меню -->
+    <div class="mobile-menu">
+        <ul class="mobile-menu__links">
+            <li class="mobile-menu__link">
+                <a href="#" class="mobile-menu__link_a">Форма выпуска</a>
+            </li>
+            <li class="mobile-menu__link">
+                <a href="#mobile-research-anchor" class="mobile-menu__link_a">Механизм действия</a>
+            </li>
+            <li class="mobile-menu__link">
+                <a href="#therapy-efficiency-mobile-anchor" class="mobile-menu__link_a">Способ применения</a>
+            </li>
+            <li class="mobile-menu__link">
+                <a href="#dosing-anchor-mobile" class="mobile-menu__link_a">Показания и противопоказания к
+                    применению</a>
+            </li>
+            <li class="mobile-menu__link">
+                <a href="#dosing-anchor-mobile" class="mobile-menu__link_a">Статьи о препарате</a>
+            </li>
+            <li class="mobile-menu__link">
+                <a href="#dosing-anchor-mobile" class="mobile-menu__link_a">Эксперты о препарате</a>
+            </li>
+            <li class="mobile-menu__link">
+                <a href="#dosing-anchor-mobile" class="mobile-menu__link_a">Лекции о препарате</a>
+            </li>
+        </ul>
+    </div>
     <div class="main-container">
         <!-- Первый экран -->
         <section class="main-banner">
+            <!-- Мобильная навигация -->
+            <div class="mobile-nav">
+                <div class="mobile-logo">
+                    <img src="/img/icons/logo-mobile.svg" alt="" />
+                </div>
+                <div class="mobile-burger">
+                    <img src="/img/icons/burger.svg" alt="" class="mobile-burger-img" />
+                </div>
+            </div>
             <div class="banner-boxes row">
-                <div class="banner-box banner-box-main col text-center d-flex flex-column justify-content-between">
+                <div class="banner-box m-2 banner-box-main col text-center d-flex flex-column justify-content-between">
                     <img src="img/icons/arrow-back.svg" alt="назад на интернейро" class="arrow-back" />
                     <img src="img/icons/logo.svg" alt="логотип междисциплинарная неврология" class="logo-interneuro" />
                 </div>
-                <div class="banner-box col text-center d-flex flex-column justify-content-center">
+                <div class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Форма выпуска
                 </div>
-                <div class="banner-box col text-center d-flex flex-column justify-content-center">
+                <div class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Механизм действия
                 </div>
-                <div class="banner-box col text-center d-flex flex-column justify-content-center">
+                <div class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Способ применения
                 </div>
-                <div class="banner-box col text-center d-flex flex-column justify-content-center">
+                <div class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Показания и противопоказания к применению
                 </div>
-                <div class="banner-box col text-center d-flex flex-column justify-content-center">
+                <div class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Статьи о препарате
                 </div>
-                <div class="banner-box col text-center d-flex flex-column justify-content-center">
+                <div class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Эксперты о препарате
                 </div>
-                <div class="banner-box col text-center d-flex flex-column justify-content-center">
+                <div class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Лекции о препарате
                 </div>
             </div>
@@ -87,18 +123,21 @@
                         <img src="img/icons/where-to-buy-arrow.svg" alt="где купить" class="neurospan-button-img" />
                     </div>
                 </div>
-
                 <div class="neurospan-big">Нейроспан</div>
             </div>
             <div class="vitamins-block row justify-content-between">
-                <div class="vitamins-block__desc col-md-5">
+                <div class="vitamins-block__desc col-lg-5">
                     Содержит естественные для организма компоненты,<br />
                     которые стимулируют восстановление нервных волокон:
                 </div>
-                <div class="vitamins col-md-7 row d-flex">
-                    <div class="vitamin col-md-4">Нуклеотид уридин-5-монофосфат</div>
-                    <div class="vitamin col-md-4">Витамины В12 (Цианокобаламин)</div>
-                    <div class="vitamin col-md-4">B9 (Фолиевую кислота)</div>
+                <div class="vitamins col-lg-7 col-sm-12 row d-flex">
+                    <div class="vitamin col-lg-4 col-md-12">
+                        Нуклеотид уридин-5-монофосфат
+                    </div>
+                    <div class="vitamin col-lg-4 col-md-12">
+                        Витамины В12 (Цианокобаламин)
+                    </div>
+                    <div class="vitamin col-lg-4 col-md-12">B9 (Фолиевую кислота)</div>
                 </div>
             </div>
         </section>
@@ -108,7 +147,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="release-form__heading">Форма выпуска препарата</div>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="accNeurospan">
                         <div class="accordion-heading">
                             Нейроспан<span class="neurospan-copyright">&#174;</span>
                         </div>
@@ -117,145 +156,190 @@
                             мг)
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Accordion Item #1
+                            <h2 class="accordion-header" id="heading-uridin">
+                                <button class="accordion-button acc-btn-simple collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#uridin50" aria-expanded="true"
+                                    aria-controls="uridin50">
+                                    Уридинмонофосфат, 50 мг
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
+                            <div id="uridin50" class="accordion-collapse collapse" aria-labelledby="heading-uridin"
+                                data-bs-parent="#accNeurospan">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It
-                                    is shown by default, until the collapse plugin adds the
-                                    appropriate classes that we use to style each element. These
-                                    classes control the overall appearance, as well as the
-                                    showing and hiding via CSS transitions. You can modify any
-                                    of this with custom CSS or overriding our default variables.
-                                    It's also worth noting that just about any HTML can go
-                                    within the <code>.accordion-body</code>, though the
-                                    transition does limit overflow.
+                                    Уридинмонофосфат это небольшой структурный элемент
+                                    организма, является составляющей частью РНК, он способствует
+                                    восстановлению различными направлениями.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
+                            <h2 class="accordion-header" id="heading-foly">
+                                <button class="accordion-button acc-btn-simple collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#foly100" aria-expanded="false"
+                                    aria-controls="foly100">
+                                    Фолиевая кислота, 100 мкг<br />
+                                    <span class="make-grey display-contents">(Витамин B9)</span>
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
+                            <div id="foly100" class="accordion-collapse collapse" aria-labelledby="heading-foly"
+                                data-bs-parent="#accNeurospan">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong>
-                                    It is hidden by default, until the collapse plugin adds the
-                                    appropriate classes that we use to style each element. These
-                                    classes control the overall appearance, as well as the
-                                    showing and hiding via CSS transitions. You can modify any
-                                    of this with custom CSS or overriding our default variables.
-                                    It's also worth noting that just about any HTML can go
-                                    within the <code>.accordion-body</code>, though the
-                                    transition does limit overflow.
+                                    Фолиевая кислота (Витамин B9) выступает в качестве
+                                    кофермента во множестве реакций восстановления нервных
+                                    волокон, в особенности в метаболизме белка и нуклеиновых
+                                    кислот.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Accordion Item #3
+                            <h2 class="accordion-header" id="heading-b12">
+                                <button class="accordion-button acc-btn-simple collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#b1215" aria-expanded="false"
+                                    aria-controls="b1215">
+                                    Витамин B12, 1,5 мкг<br />
+                                    <span class="make-grey display-contents">(Цианокобаламин)</span>
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
+                            <div id="b1215" class="accordion-collapse collapse" aria-labelledby="heading-b12"
+                                data-bs-parent="#accNeurospan">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It
-                                    is hidden by default, until the collapse plugin adds the
-                                    appropriate classes that we use to style each element. These
-                                    classes control the overall appearance, as well as the
-                                    showing and hiding via CSS transitions. You can modify any
-                                    of this with custom CSS or overriding our default variables.
-                                    It's also worth noting that just about any HTML can go
-                                    within the <code>.accordion-body</code>, though the
-                                    transition does limit overflow.
+                                    Витамин B12 (Цианокобаламин) имеет важное значение для
+                                    нервной системы, так как участвует в биохимических
+                                    процессах, обеспечивающих образование миелиновой оболочки
+                                    нервов. Также витамин B12 переводит фолиевую кислоту в ее
+                                    активную форму. Он необходим для создания ДНК и РНК в каждой
+                                    клетке тела.
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="accNeurospanForte">
                         <div class="accordion-heading">
                             Нейроспан<span class="neurospan-copyright">&#174;</span>ФОРТЕ
                         </div>
                         <div class="accordion-desc">
-                            <img src="img/icons/tablet-icon-2.svg" alt="" /> 50 таблеток
-                            (165 мг)
+                            <img src="img/icons/tablet-test.svg" alt="" /> 30 капсул (550
+                            мг)
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Accordion Item #1
+                            <h2 class="accordion-header" id="uridin-heading-2">
+                                <button class="accordion-button acc-btn-forte collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#uridin150" aria-expanded="true"
+                                    aria-controls="uridin150">
+                                    Уридинмонофосфат, 150 мг
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
+                            <div id="uridin150" class="accordion-collapse collapse" aria-labelledby="uridin-heading-2"
+                                data-bs-parent="#accNeurospanForte">
                                 <div class="accordion-body">
-                                    <strong>This is the first item's accordion body.</strong> It
-                                    is shown by default, until the collapse plugin adds the
-                                    appropriate classes that we use to style each element. These
-                                    classes control the overall appearance, as well as the
-                                    showing and hiding via CSS transitions. You can modify any
-                                    of this with custom CSS or overriding our default variables.
-                                    It's also worth noting that just about any HTML can go
-                                    within the <code>.accordion-body</code>, though the
-                                    transition does limit overflow.
+                                    Уридинмонофосфат это небольшой структурный элемент
+                                    организма, является составляющей частью РНК, он способствует
+                                    восстановлению различными направлениями.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
+                            <h2 class="accordion-header" id="heading-foly-2">
+                                <button class="accordion-button acc-btn-forte collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#foly200" aria-expanded="false"
+                                    aria-controls="foly200">
+                                    Фолиевая кислота, 200 мкг<br />
+                                    <span class="make-grey display-contents">(Витамин B9)</span>
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
+                            <div id="foly200" class="accordion-collapse collapse" aria-labelledby="heading-foly-2"
+                                data-bs-parent="#accNeurospanForte">
                                 <div class="accordion-body">
-                                    <strong>This is the second item's accordion body.</strong>
-                                    It is hidden by default, until the collapse plugin adds the
-                                    appropriate classes that we use to style each element. These
-                                    classes control the overall appearance, as well as the
-                                    showing and hiding via CSS transitions. You can modify any
-                                    of this with custom CSS or overriding our default variables.
-                                    It's also worth noting that just about any HTML can go
-                                    within the <code>.accordion-body</code>, though the
-                                    transition does limit overflow.
+                                    Фолиевая кислота (Витамин B9) выступает в качестве
+                                    кофермента во множестве реакций восстановления нервных
+                                    волокон, в особенности в метаболизме белка и нуклеиновых
+                                    кислот.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Accordion Item #3
+                            <h2 class="accordion-header" id="heading-b12-2">
+                                <button class="accordion-button acc-btn-forte collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#b122" aria-expanded="false"
+                                    aria-controls="b122">
+                                    Витамин B12, 2 мкг<br />
+                                    <span class="make-grey display-contents">(Цианокобаламин)</span>
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
+                            <div id="b122" class="accordion-collapse collapse" aria-labelledby="heading-b12-2"
+                                data-bs-parent="#accNeurospanForte">
                                 <div class="accordion-body">
-                                    <strong>This is the third item's accordion body.</strong> It
-                                    is hidden by default, until the collapse plugin adds the
-                                    appropriate classes that we use to style each element. These
-                                    classes control the overall appearance, as well as the
-                                    showing and hiding via CSS transitions. You can modify any
-                                    of this with custom CSS or overriding our default variables.
-                                    It's also worth noting that just about any HTML can go
-                                    within the <code>.accordion-body</code>, though the
-                                    transition does limit overflow.
+                                    Витамин B12 (Цианокобаламин) имеет важное значение для
+                                    нервной системы, так как участвует в биохимических
+                                    процессах, обеспечивающих образование миелиновой оболочки
+                                    нервов. Также витамин B12 переводит фолиевую кислоту в ее
+                                    активную форму. Он необходим для создания ДНК и РНК в каждой
+                                    клетке тела.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="holin-heading">
+                                <button class="accordion-button acc-btn-forte collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#holin" aria-expanded="false"
+                                    aria-controls="holin">
+                                    Холин, 60 мг<br />
+                                    <span class="make-grey display-contents">(Витамин В4)</span>
+                                </button>
+                            </h2>
+                            <div id="holin" class="accordion-collapse collapse" aria-labelledby="holin-heading"
+                                data-bs-parent="#accNeurospanForte">
+                                <div class="accordion-body">
+                                    Холина битартрат (Витамин В4) является предшественником
+                                    одного из главных медиаторов центральной нервной системы –
+                                    ацетилхолина, отвечающего за многие функции головного мозга
+                                    (управление движением, мыслительный процесс, сон, память и
+                                    т.д.). Входит в состав главного компонента мембран нервных
+                                    клеток – фосфатидилхолина, дефицит которого приводит к
+                                    когнитивным нарушениям и деменции. Выступает в качестве
+                                    кофермента во множестве реакций восстановления нервных
+                                    волокон, в особенности в метаболизме белка и нуклеиновых
+                                    кислот.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="tiamin-heading">
+                                <button class="accordion-button acc-btn-forte collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#tiamin" aria-expanded="false"
+                                    aria-controls="tiamin">
+                                    Витамин B1, 2 мг<br />
+                                    <span class="make-grey display-contents">(Тиамин)</span>
+                                </button>
+                            </h2>
+                            <div id="tiamin" class="accordion-collapse collapse" aria-labelledby="tiamin-heading"
+                                data-bs-parent="#accNeurospanForte">
+                                <div class="accordion-body">
+                                    Витамин B1 (Тиамин) тиамин, находящийся в мембранах нервных
+                                    клеток, оказывает влияние на процессы восстановления нервных
+                                    клеток, регулирует проведение сигналов по нервным волокнам,
+                                    а также участвует в обеспечении энергетических процессов в
+                                    нервных клетках.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="b6-heading">
+                                <button class="accordion-button acc-btn-forte collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#b6" aria-expanded="false"
+                                    aria-controls="b6">
+                                    Витамин B6, 2,5 мг<br />
+                                    <span class="make-grey display-contents">(Пиридоксин)</span>
+                                </button>
+                            </h2>
+                            <div id="b6" class="accordion-collapse collapse" aria-labelledby="b6-heading"
+                                data-bs-parent="#accNeurospanForte">
+                                <div class="accordion-body">
+                                    Витамин B6 (Пиридоксин) участвует в метаболизме белков
+                                    нервной ткани. Он способствует выработке энергии в
+                                    организме, а также обладает антиоксидантным действием.
                                 </div>
                             </div>
                         </div>
@@ -289,10 +373,7 @@
         <!-- Баннер повреждение нервного волокна -->
         <section class="nerve-dmg">
             <div class="row">
-                <div class="col-md-6 text-center">
-                    <img src="img/icons/nerve-damage.svg" alt="" class="nerve-dmg-img" />
-                </div>
-                <div class="col-md-6">
+                <div class="col-md-6 order-md-2">
                     <div class="nerve-dmg__heading">Повреждение нервного волокна</div>
                     <div class="nerve-dmg__text">
                         Одна из причин неприятных ощущений и боли в теле — повреждение
@@ -306,6 +387,9 @@
                         сигналы в мозг.
                     </div>
                 </div>
+                <div class="col-md-6 text-center order-md-1">
+                    <img src="img/icons/nerve-damage.svg" alt="" class="nerve-dmg-img" />
+                </div>
             </div>
         </section>
 
@@ -315,21 +399,21 @@
                 Основные причины повреждения периферических нервов
             </div>
             <div class="reasons__cards row justify-content-center">
-                <div class="col-lg-3 text-center reason">
+                <div class="col-lg-3 m-2 text-center reason">
                     <img src="img/icons/cycle-icon.svg" alt="" class="reason__img" />
                     <div class="reason__text">Длительное нарушение обмена веществ</div>
                 </div>
-                <div class="col-lg-3 text-center reason">
+                <div class="col-lg-3 m-2 text-center reason">
                     <img src="img/icons/nerve-pinch-icon.svg" alt="" class="reason__img" />
                     <div class="reason__text">
                         Защемление нервов, в том числе из-за травм
                     </div>
                 </div>
-                <div class="col-lg-3 text-center reason">
+                <div class="col-lg-3 m-2 text-center reason">
                     <img src="img/icons/clock-icon.svg" alt="" class="reason__img" />
                     <div class="reason__text">Малоподвижный образ жизни</div>
                 </div>
-                <div class="col-lg-3 text-center reason">
+                <div class="col-lg-3 m-2 text-center reason">
                     <img src="img/icons/lightning-icon.svg" alt="" class="reason__img" />
                     <div class="reason__text">Воспалительные процессы в организме</div>
                 </div>
@@ -380,31 +464,43 @@
                 <div class="col-md-6 px-3">
                     <div class="mechanics__cards">
                         <div class="m-card m-card-1">
-                            <div class="m-card__number">01</div>
-                            <div class="m-card__heading">Регенерации</div>
+                            <div class="m-card__top">
+                                <div class="m-card__number">01</div>
+                                <div class="m-card__heading">Регенерации</div>
+                            </div>
+
                             <div class="m-card__text">
                                 Восстановлению нервного волокна — регенерация поврежденных
                                 миелиновых оболочек нервов
                             </div>
                         </div>
                         <div class="m-card m-card-2">
-                            <div class="m-card__number">02</div>
-                            <div class="m-card__heading">Транспорту веществ</div>
+                            <div class="m-card__top">
+                                <div class="m-card__number">02</div>
+                                <div class="m-card__heading">Транспорту веществ</div>
+                            </div>
+
                             <div class="m-card__text">
                                 Поступлению достаточного количества строительных элементов и
                                 ферментов к поврежденным нервам
                             </div>
                         </div>
                         <div class="m-card m-card-3">
-                            <div class="m-card__number">03</div>
-                            <div class="m-card__heading">Синергии</div>
+                            <div class="m-card__top">
+                                <div class="m-card__number">03</div>
+                                <div class="m-card__heading">Синергии</div>
+                            </div>
+
                             <div class="m-card__text">
                                 Компоненты взаимно усиливают действие друг друга
                             </div>
                         </div>
                         <div class="m-card m-card-4">
-                            <div class="m-card__number">04</div>
-                            <div class="m-card__heading">Профилактике</div>
+                            <div class="m-card__top">
+                                <div class="m-card__number">04</div>
+                                <div class="m-card__heading">Профилактике</div>
+                            </div>
+
                             <div class="m-card__text">
                                 Профилактике дальнейшего повреждения периферических нервных
                                 волокон
@@ -420,7 +516,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="indications__heading">Показания к применению</div>
-                    <div class="indications__contradictions">
+                    <div class="indications__contradictions indications__contradictions_desktop">
                         <b>Противопоказания:</b><br />
                         <div class="contrads">
                             <div class="contrad">
@@ -437,6 +533,17 @@
                         В качестве биологически активной добавки к пище – дополнительного
                         источника витаминов В1, В6, В12 и фолиевой кислоты, источника
                         холина, содержащей натриевую соль уридинмонофосфата.
+                    </div>
+                    <div class="indications__contradictions indications__contradictions_mobile">
+                        <b>Противопоказания:</b><br />
+                        <div class="contrads">
+                            <div class="contrad">
+                                Индивидуальная непереносимость, беременность, кормление грудью
+                            </div>
+                            <div class="contrad">
+                                Перед применением рекомендуется проконсультироваться с врачом
+                            </div>
+                        </div>
                     </div>
                     <div class="neurospan-button neurospan-button_indications">
                         Источник
@@ -709,10 +816,12 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide lecture-slide">
                         <div class="lecture-slide__img">
-                            <img src="img/lecture-img.jpg" alt="" class="lecture-img">
+                            <img src="img/lecture-img.jpg" alt="" class="lecture-img" />
                         </div>
                         <div class="lecture-slide__author">Костенко М. В.</div>
-                        <div class="lecture-slide__topic">Новый эффективный препарат Нейроспан</div>
+                        <div class="lecture-slide__topic">
+                            Новый эффективный препарат Нейроспан
+                        </div>
                         <div class="feed__tags">
                             <div class="feed__tag">Боль</div>
                             <div class="feed__tag">Антидепрессант</div>
@@ -720,30 +829,38 @@
                     </div>
                     <div class="swiper-slide lecture-slide">
                         <div class="lecture-slide__img">
-                            <img src="img/lecture-img.jpg" alt="" class="lecture-img">
+                            <img src="img/lecture-img.jpg" alt="" class="lecture-img" />
                         </div>
                         <div class="lecture-slide__author">Костенко М. В.</div>
-                        <div class="lecture-slide__topic">Новый эффективный препарат Нейроспан</div>
+                        <div class="lecture-slide__topic">
+                            Новый эффективный препарат Нейроспан
+                        </div>
                         <div class="feed__tags">
                             <div class="feed__tag">Боль</div>
                             <div class="feed__tag">Антидепрессант</div>
                         </div>
-                    </div><div class="swiper-slide lecture-slide">
+                    </div>
+                    <div class="swiper-slide lecture-slide">
                         <div class="lecture-slide__img">
-                            <img src="img/lecture-img.jpg" alt="" class="lecture-img">
+                            <img src="img/lecture-img.jpg" alt="" class="lecture-img" />
                         </div>
                         <div class="lecture-slide__author">Костенко М. В.</div>
-                        <div class="lecture-slide__topic">Новый эффективный препарат Нейроспан</div>
+                        <div class="lecture-slide__topic">
+                            Новый эффективный препарат Нейроспан
+                        </div>
                         <div class="feed__tags">
                             <div class="feed__tag">Боль</div>
                             <div class="feed__tag">Антидепрессант</div>
                         </div>
-                    </div><div class="swiper-slide lecture-slide">
+                    </div>
+                    <div class="swiper-slide lecture-slide">
                         <div class="lecture-slide__img">
-                            <img src="img/lecture-img.jpg" alt="" class="lecture-img">
+                            <img src="img/lecture-img.jpg" alt="" class="lecture-img" />
                         </div>
                         <div class="lecture-slide__author">Костенко М. В.</div>
-                        <div class="lecture-slide__topic">Новый эффективный препарат Нейроспан</div>
+                        <div class="lecture-slide__topic">
+                            Новый эффективный препарат Нейроспан
+                        </div>
                         <div class="feed__tags">
                             <div class="feed__tag">Боль</div>
                             <div class="feed__tag">Антидепрессант</div>
@@ -753,7 +870,62 @@
             </div>
         </section>
 
+        <section class="promo text-center">
+            <div class="promo__heading">
+                <img src="img/promo-boxes.png" alt="" />
+                <span class="make-yellow">Нейроспан®—</span><br />
+                это жизнь без боли!
+            </div>
 
+            <div class="promo__video">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/642675279?h=75fff75928" width="640"
+                    height="360" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer row">
+                <div class="footer__logo col-md-4">
+                    <img src="img/icons/vitamir-logo.svg" alt="" />
+                    <div class="footer__brand">Нейроспан®, 2022</div>
+                </div>
+                <div class="footer__manufacturer col-md-4">
+                    <div class="footer__block">
+                        <div class="footer__heading">Производитель</div>
+                        <div class="footer__text">
+                            ООО «Квадрат-С», 115230, г. Москва, Хлебозаводский проезд, 7
+                            стр. 10, офис 403
+                        </div>
+                    </div>
+                    <div class="footer__block footer__block_address">
+                        <div class="footer__heading">Адрес производства</div>
+                        <div class="footer__text">
+                            612711, Кировская область Омутнинский район, пгт. Восточный, ул.
+                            Заводская, д. 1
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer__block">
+                        <div class="footer__heading">Контакты компании производителя</div>
+                        <div class="footer__text">
+                            <div class="footer__contacts">
+                                <div class="footer__contact">+7 (495) 230-01-17</div>
+                                <div class="footer__contact footer__contact_mail">
+                                    info@kvadrat-c.ru
+                                </div>
+                                <div class="footer__contact footer__contact_website">
+                                    kvadrat-c.ru
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="no-cure text-center">
+                <img src="img/icons/no-cure.svg" alt="" class="no-cure-img" />
+            </div>
+        </footer>
     </div>
 
     <script type="module" src="js/feedback.js"></script>
@@ -761,6 +933,7 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
         var swiperArticles = new Swiper('.swiper-articles', {
             spaceBetween: 32,

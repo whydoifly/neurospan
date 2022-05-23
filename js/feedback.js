@@ -4,6 +4,6 @@ const API = {
 }
 
 const feedsArr = feeds.fetchAll();
-feedsArr.map((feed) => {
-    console.log(feed.author)
-})
+// feedsArr.map((feed) => {
+//     console.log(feed.author)
+// })
