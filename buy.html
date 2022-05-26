@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
             m[i] =
                 m[i] ||
@@ -46,7 +47,7 @@
         <div>
             <img src="https://mc.yandex.ru/watch/88845353" style="position: absolute; left: -9999px" alt="" />
         </div>
-    </noscript>
+    </noscript> -->
     <!-- /Yandex.Metrika counter -->
 
     <!-- Мобильное меню -->
@@ -93,30 +94,30 @@
                     <img src="img/icons/arrow-back.svg" alt="назад на интернейро" class="arrow-back" />
                     <img src="img/icons/logo.svg" alt="логотип междисциплинарная неврология" class="logo-interneuro" />
                 </a>
-                <a href="#release-form-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
+                <a href="/#release-form-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Форма выпуска
                 </a>
-                <a href="#mechanics-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
+                <a href="/#mechanics-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Механизм действия
                 </a>
-                <a href="#way-of-use-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
+                <a href="/#way-of-use-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Способ применения
                 </a>
-                <a href="#contrads-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
+                <a href="/#contrads-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Показания и противопоказания к применению
                 </a>
-                <a href="#articles-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
+                <a href="/#articles-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Статьи о препарате
                 </a>
-                <a href="#experts-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
+                <a href="/#experts-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Эксперты о препарате
                 </a>
-                <a href="#lectures-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
+                <a href="/#lectures-a" class="banner-box m-2 col text-center d-flex flex-column justify-content-center">
                     Лекции о препарате
                 </a>
             </div>
             <div class="neurospan-heading">
-                <div class="neurospan-big">Где купить</div>
+                <div class="neurospan-big" data-aos="fade-up" data-aos-duration="1500">Где купить</div>
             </div>
             <div class="vitamins-block row justify-content-end">
                 <div class="vitamins-block__desc col-lg-3">
@@ -205,12 +206,14 @@
         </footer>
     </div>
 
-    <script type="module" src="js/feedback.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
