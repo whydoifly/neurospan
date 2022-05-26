@@ -51,6 +51,38 @@ body {
     padding: 16px 64px 90px 64px;
 }
 
+/* Кнопка наверх */
+
+.back-to-top__btn {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 6;
+    transform: rotate(-90deg);
+    background-color: transparent;
+    border: none;
+  }
+  .back-to-top__icon {
+    box-shadow: -11px -7px 24px rgba(128, 128, 128, 0.301);
+    border-radius: 50%;
+  }
+
+  .back-to-top__btn:hover {
+    cursor: pointer;
+  }
+  .back-to-top__btn.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+/* Конец стилей кнопки наверх */
+
 /* Мобильное меню и мобильная навигация */
 .mobile-nav {
     display: none;
@@ -209,6 +241,7 @@ body {
     display: block;
     border-radius: 32px;
     margin: 7px 5px 0px 0px;
+    flex: none;
 }
 
 .release-form {
@@ -893,6 +926,14 @@ body {
     padding: 22px 0;
 }
 
+.acc-btn-text {
+    transition: all 0.2s ease-in-out;
+}
+
+.accordion-button:hover .acc-btn-text {
+    transform: translateX(10px);
+}
+
 .acc-btn-simple:not(.collapsed)::after {
     background-image: url(/img/icons/collapse-yellow.svg) !important;
 }
@@ -1030,6 +1071,7 @@ footer {
     display: block;
     border-radius: 32px;
     margin: 3px 14px 0px 0px;
+    flex: none;
 }
 
 .footer__contact_mail:before {
@@ -1117,6 +1159,19 @@ footer {
     .neurospan-heading {
         font-size: 10vw;
         line-height: normal;
+    }
+
+    .mechanics__cards {
+        flex-direction: column;
+    }
+
+    .m-card-1,
+    .m-card-3 {
+        margin-right: 0;
+    }
+
+    .m-card-2 {
+        margin-top: 32px;
     }
 }
 
@@ -1459,8 +1514,8 @@ footer {
 
     .use-card {
         padding: 18px 16px 30px 16px;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        /* margin-left: 0 !important;
+        margin-right: 0 !important; */
     }
 
     .use-card__brand {
