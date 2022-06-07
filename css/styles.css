@@ -474,13 +474,15 @@ body {
 
 .use-cards {
     display: flex;
-    align-items: flex-end;
 }
 
 .use-card {
     background-color: #fff;
     border-radius: 32px;
     padding: 1% 4.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .use-img {
