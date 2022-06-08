@@ -596,6 +596,8 @@ body {
     border: 2px solid #fff;
     background-color: #fff;
     padding: 16px;
+    text-decoration: none;
+    color: #212529;
     border-radius: 32px;
     display: flex;
     align-items: center;
@@ -606,6 +608,7 @@ body {
 
 .swiper-article:hover {
     background-color: transparent;
+    color: #212529;
 }
 
 .swiper-article__img img {
